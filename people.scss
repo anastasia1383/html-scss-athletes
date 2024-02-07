@@ -1,0 +1,14 @@
+.people {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 30px;
+  max-width: $small-container-width;
+  padding: 30px 35px;
+  margin: 0 auto;
+
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: $big-container-width;
+    padding-inline: 55px;
+  }
+}

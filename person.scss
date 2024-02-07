@@ -1,0 +1,70 @@
+.person {
+  padding-inline: 10px;
+  padding-block: 10px 16px;
+  transition: transform 1s;
+
+  &:hover {
+    transform: scale(1.2);
+    background-color: $hover-bg-color;
+    border-radius: 10px;
+    z-index: 5;
+
+    img {
+      border-radius: 60px;
+    }
+
+    .person__extra {
+      opacity: 1;
+    }
+  }
+
+  &__photo {
+    position: relative;
+    margin-bottom: 8px;
+
+    img {
+      border-radius: 50%;
+      transition: border-radius 1s;
+    }
+  }
+
+  &__rank {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+  
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: $accent-text-color;
+  }
+  
+  &__details {
+    text-align: center;
+  }
+  
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+    color: $main-text-color;
+    margin-bottom: 9px;
+  }
+  
+  &__extra {
+    opacity: 0;
+    font-size: 18px;
+    line-height: 21px;
+    color: $secondary-text-color;
+  }
+}
